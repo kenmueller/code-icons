@@ -6154,7 +6154,7 @@ class IconTables {
  * FileIcons
  * ------------------------------------------------------------------------- */
 
-export const db = new IconTables(icondb)
+const db = new IconTables(icondb)
 
 /**
  * Get icon class name of the provided filename. If not found, default to text icon.
