@@ -1,3 +1,5 @@
+# code-icons
+
 > File specific icons for the browser from Atom File-icons, https://github.com/file-icons/atom
 
 [![Hyperapp demo](https://img.shields.io/badge/File%20icons%20demo-%E2%86%92-9D6EB3.svg?style=flat-square)](https://websemantics.github.io/file-icons-js)
@@ -6,46 +8,25 @@
 
 ## Install
 
-Use `npm` to install as follows,
-
 ```bash
-npm i websemantics/file-icons-js
+npm i code-icons
 ```
 
-Or, `Bower`,
-
-```bash
-bower i websemantics/file-icons-js
-```
-
-## Getting Started
-
-Include `css` styles from `styles/index.css` in the header of an html document.
-
-Get an instance of `FileIcons` class,
+## Include CSS styles
 
 ```js
-const icons = window.FileIcons
+import 'code-icons/styles.css'
 ```
 
-Get the class name of the icon that represent a filename (for example `text-icon`),
+## Get `className`
 
 ```js
-const filename = 'src/app.js'
-const class_name = icons.getClass(filename)
-```
+import icons from 'code-icons'
 
-You can also get a class name of the associated icon color,
+const className = icons.getClass('src/app.js')
+const className = icons.getClassWithColor('README.md')
 
-```js
-const filename = 'README.md'
-const class_name = icons.getClassWithColor(filename)
-```
-
-Use the class name to generate html, for example,
-
-```js
-document.body.innerHTML = '<a><i class=' + class_name + '></i>$filename</a>'
+document.body.innerHTML += `<span class="${className}"></span>`
 ```
 
 ## Resources
