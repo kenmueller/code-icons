@@ -1,9 +1,9 @@
 {
 	"name": "code-icons",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "File specific icons for the browser from Atom File-icons, https://github.com/file-icons/atom",
 	"main": "lib/index.js",
-	"style": "styles/index.css",
+	"style": "styles.css",
 	"types": "types/index.d.ts",
 	"scripts": {
 		"build": "babel src -o lib/index.js",
