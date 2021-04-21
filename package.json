@@ -1,6 +1,6 @@
 {
 	"name": "code-icons",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "File specific icons for the browser from Atom File-icons, https://github.com/file-icons/atom",
 	"main": "lib/index.js",
 	"style": "styles.css",
