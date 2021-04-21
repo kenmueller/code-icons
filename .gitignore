@@ -1,11 +1,3 @@
-.DS_Store
-Thumbs.db
-Desktop.ini
-node_modules
-._*
-.\#*
-\#*\#
-*~
-*.lock
-package-lock.json
-yarn.lock
+**/*.DS_Store
+node_modules/
+lib/

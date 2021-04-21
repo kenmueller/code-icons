@@ -1,41 +1,40 @@
 {
-  "name": "file-icons-js",
-  "version": "1.1.0",
-  "description": "File specific icons for the browser from Atom File-icons, https://github.com/file-icons/atom",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup index.js --format umd --name 'FileIcons' --file dist/file-icons.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/websemantics/file-icons-js.git"
-  },
-  "keywords": [
-    "javascript",
-    "nodejs",
-    "icons",
-    "octicons",
-    "mfizz",
-    "devicons"
-  ],
-  "author": {
-    "name": "Daniel Brooker.",
-    "email": "dan@nocturnalcode.com"
-  },
-  "contributors": [{
-    "name": "Adnan M.Sagar, PhD.",
-    "email": "adnan@websemantics.ca"
-  }],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/websemantics/file-icons-js/issues"
-  },
-  "dependencies": {
-  },
-  "devDependencies": {
-    "rollup": "2.33.3"
-  },
-  "homepage": "https://github.com/websemantics/file-icons-js"
+	"name": "code-icons",
+	"version": "1.0.0",
+	"description": "File specific icons for the browser from Atom File-icons, https://github.com/file-icons/atom",
+	"main": "lib/index.js",
+	"style": "styles/index.css",
+	"types": "types/index.d.ts",
+	"scripts": {
+		"build": "babel src -o lib/index.js",
+		"prepublishOnly": "npm run build"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.13.16",
+		"@babel/core": "^7.13.16",
+		"@babel/preset-env": "^7.13.15"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kenmueller/code-icons.git"
+	},
+	"keywords": [
+		"javascript",
+		"nodejs",
+		"icons",
+		"octicons",
+		"mfizz",
+		"devicons",
+		"code icons",
+		"code"
+	],
+	"author": {
+		"name": "Ken Mueller",
+		"email": "kenmueller0@gmail.com"
+	},
+	"bugs": {
+		"url": "https://github.com/kenmueller/code-icons/issues"
+	},
+	"homepage": "https://github.com/kenmueller/code-icons#readme",
+	"license": "MIT"
 }
